@@ -1,11 +1,11 @@
-<p-card [style]="{ width: '135vh', overflow: 'hidden', background: 'white', height: '85vh'}">
+<p-card [style]="style">
     <div class = "Container">
         <app-boton></app-boton>
         <app-boton-hamburguesa></app-boton-hamburguesa>
     </div>
     <div class = "Container-Flechas">
-        <app-flechas></app-flechas>
-        <app-flechas></app-flechas>
+        <button (click)="changeBackground('prev')">Change Background</button>
+        <button (click)="changeBackground('next')">Change Background</button>
     </div>
     <div class  = "Container-Rueda">
         <app-boton></app-boton>

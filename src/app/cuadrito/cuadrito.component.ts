@@ -11,5 +11,33 @@ import { BotonHamburguesaComponent } from "../boton-hamburguesa/boton-hamburgues
   styleUrl: './cuadrito.component.css'
 })
 export class CuadritoComponent {
+  style = {
+    width: '135vh',
+    overflow: 'hidden',
+    height: '85vh',
+    'background-image': 'url(/img/living.png)',
+    'background-size' : '100%'
+  };
 
+  backgrounds = ['living', 'kitchen', 'bathroom', 'patio']
+
+  index = 0
+
+  changeBackground(action: String) {
+    if(action == "next"){
+      this.index += 1
+    }
+    else if(action == "prev"){
+      this.index -= 1
+    }
+
+    if(this.index < 0){
+      this.index = this.backgrounds.length - 1;
+    }
+
+    this.style = {
+      ...this.style,
+      'background-image': `url(/img/${this.backgrounds[this.index%this.backgrounds.length]}.png)`
+    };
+  }
 }
