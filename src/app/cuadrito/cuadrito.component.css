@@ -9,8 +9,7 @@
 .Container > *{
     padding-left: 5vh;
     padding-right: 5vh;
-    padding: 0;
-    margin: 0;
+    border: 0;
 }
 
 .Container-Rueda{
