@@ -1,16 +1,17 @@
 <p-card [style]="style">
     <div class = "Container">
-        <app-boton></app-boton>
+        <button style="padding-top: 0; background-image: url(/img/coin.png); height: 8vh; background-size: cover; background-color: rgba(0, 0, 0, 0);"></button>
         <app-boton-hamburguesa></app-boton-hamburguesa>
     </div>
     <div class = "Container-Flechas">
-        <button (click)="changeBackground('prev')">Change Background</button>
-        <button (click)="changeBackground('next')">Change Background</button>
+        <button style="background-image: url(/img/coin.png); height: 10vh; background-size: cover; background-color: rgba(0, 0, 0, 0);" (click)="changeBackground('prev')" ></button>
+        <button style="background-image: url(/img/coin.png); height: 10vh; background-size: cover; background-color: rgba(0, 0, 0, 0);" (click)="changeBackground('next')"></button>
     </div>
     <div class  = "Container-Rueda">
-        <app-boton></app-boton>
-        <app-boton></app-boton>
-        <app-boton></app-boton>
-        <app-boton></app-boton>
+        <button>a</button>
+        <button>b</button>
+        <button>c</button>
+        <button>d</button>
+
     </div>
 </p-card>
