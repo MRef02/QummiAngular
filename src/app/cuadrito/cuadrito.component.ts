@@ -3,10 +3,12 @@ import { CardModule } from 'primeng/card';
 import { BotonComponent } from "../boton/boton.component";
 import { FlechasComponent } from "../flechas/flechas.component";
 import { BotonHamburguesaComponent } from "../boton-hamburguesa/boton-hamburguesa.component";
+import { Router, ActivatedRoute } from '@angular/router';
+import { RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'app-cuadrito',
-  imports: [CardModule, BotonComponent, FlechasComponent, BotonHamburguesaComponent],
+  imports: [CardModule, BotonHamburguesaComponent, RouterOutlet],
   templateUrl: './cuadrito.component.html',
   styleUrl: './cuadrito.component.css'
 })
@@ -22,6 +24,8 @@ export class CuadritoComponent {
   backgrounds = ['living', 'kitchen', 'bathroom', 'patio']
 
   index = 0
+
+  router = new Router();
 
   changeBackground(action: String) {
     if(action == "next"){
@@ -39,5 +43,14 @@ export class CuadritoComponent {
       ...this.style,
       'background-image': `url(/img/${this.backgrounds[this.index%this.backgrounds.length]}.png)`
     };
+  }
+
+  changePage(page: String) {
+    if(page == "Cocina"){
+      this.router.navigate(['/cocina']);
+    }
+    else if(page == "Juegos"){
+      this.router.navigate(['/juegos']);
+    }
   }
 }

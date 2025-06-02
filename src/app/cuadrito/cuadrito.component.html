@@ -9,9 +9,10 @@
     </div>
     <div class  = "Container-Rueda">
         <button>a</button>
-        <button>b</button>
-        <button>c</button>
+        <button (click)="changePage('Cocina')" >b</button>
+        <button (click)="changePage('Juegos')" >c</button>
         <button>d</button>
-
     </div>
 </p-card>
+
+<router-outlet></router-outlet>
