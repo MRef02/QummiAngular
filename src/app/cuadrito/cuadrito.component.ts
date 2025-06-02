@@ -52,5 +52,8 @@ export class CuadritoComponent {
     else if(page == "Juegos"){
       this.router.navigate(['/juegos']);
     }
+    else if(page == "Tienda"){
+      this.router.navigate(['/tienda']);
+    }
   }
 }
