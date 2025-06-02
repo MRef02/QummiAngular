@@ -17,7 +17,7 @@
     height: 15vh;
     border: solid 10px blue;
     align-items: center;
-    gap: 7vh;
+    gap: 3vh;
     padding-left: 5vh;
 }
 
@@ -32,5 +32,9 @@
 .Container-Flechas > *{
     padding-left: 5vh;
     padding-right: 5vh;
+    border: 0;
+}
+
+.Container-Rueda > *{
     border: 0;
 }
