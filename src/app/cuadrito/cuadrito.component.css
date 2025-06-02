@@ -15,7 +15,6 @@
 .Container-Rueda{
     display: flex;
     height: 15vh;
-    border: solid 10px blue;
     align-items: center;
     gap: 3vh;
     padding-left: 5vh;
