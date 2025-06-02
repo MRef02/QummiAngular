@@ -1,0 +1,39 @@
+.Container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 15vh;
+    border: solid 10px black;
+}
+
+.Container > *{
+    padding-left: 5vh;
+    padding-right: 5vh;
+    border: 0;
+}
+
+.Container-Rueda{
+    display: flex;
+    height: 15vh;
+    align-items: center;
+    gap: 3vh;
+    padding-left: 5vh;
+}
+
+.Container-Flechas{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 55vh;
+    border: solid 10px greenyellow;
+}
+
+.Container-Flechas > *{
+    padding-left: 5vh;
+    padding-right: 5vh;
+    border: 0;
+}
+
+.Container-Rueda > *{
+    border: 0;
+}
