@@ -29,7 +29,6 @@
     }
 
     .back-button {
-    left: 20px;
     color: #8ed0e3;
     background-color: #e6f6fb;
     border: 5px solid #97cbda;
@@ -38,10 +37,11 @@
     height: 65px;
     font-size: 30px;
     cursor: pointer;
+    padding-bottom: 5px;
     transition: background-color 0.3s, transform 0.5s ease;
     }
 
-  .back-button:hover {
+    .back-button:hover {
     background-color: #78b9c9;
     color: white;
     transform: rotate(360deg);

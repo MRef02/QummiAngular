@@ -123,11 +123,22 @@ export class CuadritoComponent implements OnInit, OnDestroy{
       this.router.navigate(['/juegos']);
     } else if (page == "Tienda") {
       this.router.navigate(['/tienda']);
+    } else if(page=='Chat') {
+      this.router.navigate(['/chat'])
     }
-    if(page=='Chat')
-      {
-        this.router.navigate(['/chat'])
-      }
+    this.ajustPath();
+  }
+
+  ajustPath(){
+    const currentPath = this.backgrounds[this.index % this.backgrounds.length]
+    if (currentPath === '/cocina') {
+      
+    } else if (currentPath === '/juegos') {
+      
+    } else if (currentPath === '/tienda') {
+      
+    }
+    return '';
   }
 
   onHamburgerButtonClick(option: string) {

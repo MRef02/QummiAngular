@@ -4,7 +4,7 @@ import { PaginaPrincipalComponent } from './pagina-principal/pagina-principal.co
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, PaginaPrincipalComponent],
+  imports: [RouterOutlet],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
