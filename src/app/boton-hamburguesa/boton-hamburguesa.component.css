@@ -4,26 +4,26 @@
     border: 6px solid #95c8d7;
     border-radius: 50%;
     cursor: pointer;
-    
+
     height: 60px;
     width: 60px;
-    
+
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 4px;
-    
+
     transition: all 0.3s ease;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    
+
     padding: 0;
 }
 
 .hamburger-line {
-    width: 65%; 
+    width: 65%;
     height: 6px;
-    background-color: #95c8d7; 
+    background-color: #95c8d7;
     border-radius: 6px;
     transition: all 0.3s ease;
 }
@@ -34,7 +34,7 @@
 
 .hamburger-button:hover .hamburger-line {
     background-color: #78BFEF;
-    width: 70%; 
+    width: 70%;
 }
 
 .menu-container {
@@ -212,4 +212,13 @@
   width: 24px;
   height: 24px;
   pointer-events: none; /* Para que el clic sea del botón, no de la imagen */
+}
+
+.hamburger-button {
+  transition: transform 0.4s ease;
+}
+
+/* Cuando el menú esté abierto */
+.hamburger-button.open {
+  transform: rotate(90deg); /* Puedes cambiar a 180deg si quieres */
 }

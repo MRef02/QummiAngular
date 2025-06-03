@@ -1,5 +1,5 @@
 <!-- boton-hamburguesa.component.html -->
-<button class="hamburger-button" (click)="toggleMenu()">
+<button class="hamburger-button" [class.open]="isMenuOpen" (click)="toggleMenu()">
   <div class="hamburger-line"></div>
   <div class="hamburger-line"></div>
   <div class="hamburger-line"></div>
