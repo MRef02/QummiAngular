@@ -12,12 +12,23 @@
     border: 0;
 }
 
+.Container button:hover{
+    transition: transform 0.3s ease, filter 0.3s ease;
+    transform: scale(1.1);
+    filter: drop-shadow(0 0 10px #78BFEF);
+}
 .Container-Rueda{
     display: flex;
     height: 15vh;
     align-items: center;
     gap: 3vh;
     padding-left: 5vh;
+}
+
+.Container-Rueda button:hover{
+    transition: transform 0.3s ease, filter 0.3s ease;
+    transform: scale(1.1);
+    filter: drop-shadow(0 0 10px #78BFEF);
 }
 
 .Container-Flechas{
@@ -32,6 +43,12 @@
     padding-left: 5vh;
     padding-right: 5vh;
     border: 0;
+}
+
+.Container-Flechas button:hover{
+    transition: transform 0.3s ease, filter 0.3s ease;
+    transform: scale(1.1);
+    filter: drop-shadow(0 0 10px #78BFEF);
 }
 
 .Container-Rueda > *{

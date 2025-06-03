@@ -1,0 +1,218 @@
+  .background-container {
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    background-color: #fef2b9;
+    font-family: 'Arial Rounded MT', sans-serif;
+    }
+
+    .contenedor-tienda {
+    background: white;
+    border: 8px solid #97cde6;
+    border-radius: 30px;
+    padding: 30px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+
+
+    .cabecera-tienda {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    gap: 10px;
+    }
+
+    .back-button {
+    left: 20px;
+    color: #8ed0e3;
+    background-color: #e6f6fb;
+    border: 5px solid #97cbda;
+    border-radius: 50%;
+    width: 65px;
+    height: 65px;
+    font-size: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.5s ease;
+    }
+
+  .back-button:hover {
+    background-color: #78b9c9;
+    color: white;
+    transform: rotate(360deg);
+    transition: color 0.3s, transform 0.5s ease;
+    }
+
+    .boton-tab {
+    background: #d6effa;
+    border: 5px solid #97cde6;
+    color: #316a96;
+    padding: 10px 25px;
+    border-radius: 25px;
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    }
+
+    .boton-tab.activo {
+    background: #97cde6;
+    color: white;
+    }
+
+    .boton-tab:hover {
+    background-color: #b9e3f8;
+    }
+
+    .monedero {
+    background: #d6effa;
+    border-radius: 30px;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #1e3f5a;
+    }
+
+    .monedero img {
+    width: 40px;
+    height: 40px;
+    }
+
+    .seccion-productos {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    }
+
+    .producto {
+    display: flex;
+    align-items: center;
+    margin-left: 160px;
+    justify-content: space-between;
+    padding: 15px 20px;
+    }
+
+    .producto img {
+    width: 130px;
+    height: auto;
+    }
+
+    .descripcion {
+    font-size: 30px;
+    font-weight: bold;
+    flex-grow: 1;
+    margin-left: 20px;
+    }
+
+    .boton-comprar {
+    background-color: #d6effa;
+    border: none;
+    padding: 15px 30px;
+    margin-right: 170px;
+    font-size: 25px;
+    color: #316a96;
+    border-radius: 40px;
+    cursor: pointer;
+    text-align: center;
+    transition: all 0.3s ease;
+    }
+
+    .boton-comprar img.icono-svg {
+    width: 24px;               /* o el tamaño que quieras */
+    height: 24px;
+    filter: invert(28%) sepia(99%) saturate(1000%) hue-rotate(180deg);
+    vertical-align: middle;    /* para alinear bien con el texto */
+    margin-right: 6px;         /* ajusta según cómo lo veas mejor */
+    }
+
+    .boton-comprar:hover {
+    background-color: #aee4f9;
+    }
+
+    .oculto {
+    display: none;
+    }
+
+    .adicionales-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin-top: 20px;
+    }
+
+    .adicional-item {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
+
+    .adicional-card {
+    background-color: #d6effa;
+    border: 0.8vh solid #97cde6;
+    border-radius: 3.5vh;
+    padding: 1vh;
+    width: 17vw;
+    height: 17vw; /* mantiene proporción cuadrada */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    box-shadow: 0 0.5vh 1vh rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.5s ease;
+
+    min-width: 15vw;
+    min-height: 15vw;
+    max-width: 25vw;
+    max-height: 25vw;
+  }
+
+  .adicional-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* para que no se recorte nada */
+    border-radius: 20px;
+  }
+
+
+    .adicional-card:hover {
+      transform: scale(1.10);
+      transition: transform 0.5s ease;
+    }
+
+    .adicional-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    }
+
+    .titulo-adicional {
+    font-family: 'Comic Sans MS', cursive;
+    font-size: 25px;
+    font-weight: bold;
+    margin: 5px 0;
+    }
+
+    .coins {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 20px;
+    color: #ff9100;
+    font-weight: bold;
+    }
+
+    .coins img {
+    width: 50px;
+    height: 50px;
+    }
