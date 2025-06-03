@@ -3,7 +3,6 @@
     justify-content: space-between;
     align-items: center;
     height: 15vh;
-    border: solid 10px black;
 }
 
 .Container > *{
@@ -25,7 +24,6 @@
     justify-content: space-between;
     align-items: center;
     height: 55vh;
-    border: solid 10px greenyellow;
 }
 
 .Container-Flechas > *{
