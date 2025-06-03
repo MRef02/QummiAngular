@@ -1,1 +1,8 @@
-<p>pagina-juegos works!</p>
+<div class="background-container"></div>
+<p-card [style]="style">
+    <div class="Container">
+        <button style="padding-top: 0; background-image: url(/img/back.png); height: 15vh;width: 15vh; background-size: cover; background-color: rgba(0, 0, 0, 0);"(click)="changePage('principal')"></button>
+    </div>
+</p-card>
+
+<router-outlet></router-outlet>
