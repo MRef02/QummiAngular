@@ -48,6 +48,7 @@ export class CuadritoComponent implements OnInit, OnDestroy{
   
   startAnimation(): void {
     const animate = () => {
+      this.ajustPath();
       if (!this.isAnimationPaused) {
         this.gifPosition += 0.4 * this.moveDirection;
 
@@ -142,12 +143,12 @@ export class CuadritoComponent implements OnInit, OnDestroy{
       this.bottom = '6vh';
     } else if (currentPath === 'kitchen') {
       this.derecha = 78;
-      this.izquierda = 0;
-      this.bottom = '6vh';
+      this.izquierda = 40;
+      this.bottom = '0vh';
     } else if (currentPath === 'bathroom') {
-      this.derecha = 78;
-      this.izquierda = 0;
-      this.bottom = '6vh';
+      this.derecha = 70;
+      this.izquierda = 40;
+      this.bottom = '0vh';
     }
     else if (currentPath === 'patio') {
       this.derecha = 78;
