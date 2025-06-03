@@ -50,6 +50,19 @@ export class CuadritoComponent {
     } else if (page == "Tienda") {
       this.router.navigate(['/tienda']);
     }
+    this.ajustPath();
+  }
+
+  ajustPath(){
+    const currentPath = this.backgrounds[this.index % this.backgrounds.length]
+    if (currentPath === '/cocina') {
+      
+    } else if (currentPath === '/juegos') {
+      
+    } else if (currentPath === '/tienda') {
+      
+    }
+    return '';
   }
 
   onHamburgerButtonClick(option: string) {

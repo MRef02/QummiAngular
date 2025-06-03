@@ -14,5 +14,6 @@ export const routes: Routes = [
     {path: 'tienda', component: PaginaTiendaComponent},
     {path:'usuario',component:PaginaUsuarioComponent},
     {path:'mascotas',component:PaginaMascotasComponent},
-    {path:'soporte',component:PaginaSoporteComponent}
+    {path:'soporte',component:PaginaSoporteComponent},
+    {path: '**', redirectTo: '' } 
 ];
