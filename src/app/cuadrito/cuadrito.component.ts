@@ -22,7 +22,7 @@ export class CuadritoComponent implements OnInit, OnDestroy{
     position: 'relative'
   };
 
-  backgrounds = ['living', 'kitchen', 'bathroom', 'patio','dormitorio'];
+  backgrounds = ['living', 'kitchen', 'bathroom', 'patio', 'dormitorio'];
   index = 0;
   constructor(private router: Router) {}
   gifPosition = 0;
@@ -33,6 +33,11 @@ export class CuadritoComponent implements OnInit, OnDestroy{
   gifFlipped=false;
   gifWidth="65vh";
   gifHeight="45vh"// Asegúrate de tener esta ruta correcta
+
+  derecha = 78
+  izquierda = 0
+  bottom = '6vh';
+
   ngOnInit(): void {
     this.startAnimation();
   }
@@ -46,10 +51,10 @@ export class CuadritoComponent implements OnInit, OnDestroy{
       if (!this.isAnimationPaused) {
         this.gifPosition += 0.4 * this.moveDirection;
 
-        if (this.gifPosition > 78) {
+        if (this.gifPosition > this.derecha) {
           this.moveDirection = -1;
           this.gifFlipped=true;
-        } else if (this.gifPosition < 0) {
+        } else if (this.gifPosition < this.izquierda) {
           this.moveDirection = 1;
           this.gifFlipped=false;
         }
@@ -70,7 +75,7 @@ export class CuadritoComponent implements OnInit, OnDestroy{
       'position': 'absolute',
       'width': this.gifWidth,
       'height': this.gifHeight,
-      'bottom': '6vh',
+      'bottom': this.bottom,
       'left': `${this.gifPosition}vh`,
       'transition': 'left 0.1s linear',
       'z-index': '10',
@@ -131,12 +136,28 @@ export class CuadritoComponent implements OnInit, OnDestroy{
 
   ajustPath(){
     const currentPath = this.backgrounds[this.index % this.backgrounds.length]
-    if (currentPath === '/cocina') {
-      
-    } else if (currentPath === '/juegos') {
-      
-    } else if (currentPath === '/tienda') {
-      
+    if (currentPath === 'living') {
+      this.derecha = 78;
+      this.izquierda = 0;
+      this.bottom = '6vh';
+    } else if (currentPath === 'kitchen') {
+      this.derecha = 78;
+      this.izquierda = 0;
+      this.bottom = '6vh';
+    } else if (currentPath === 'bathroom') {
+      this.derecha = 78;
+      this.izquierda = 0;
+      this.bottom = '6vh';
+    }
+    else if (currentPath === 'patio') {
+      this.derecha = 78;
+      this.izquierda = 0;
+      this.bottom = '6vh';
+    }
+    else if (currentPath === 'dormitorio') {
+      this.derecha = 78;
+      this.izquierda = 0;
+      this.bottom = '6vh';
     }
     return '';
   }
