@@ -56,4 +56,8 @@ export class CuadritoComponent {
       this.router.navigate(['/tienda']);
     }
   }
+
+  onHamburgerButtonClick(option: string) {
+  console.log('Menu option clicked:', option);
+}
 }

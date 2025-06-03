@@ -1,1 +1,12 @@
-<p>boton-hamburguesa works!</p>
+<!-- boton-hamburguesa.component.html -->
+<button class="hamburger-button" (click)="toggleMenu()">
+  <div class="hamburger-line"></div>
+  <div class="hamburger-line"></div>
+  <div class="hamburger-line"></div>
+</button>
+
+<div class="menu-container" *ngIf="isMenuOpen">
+  <button class="menu-button" (click)="onButtonClick('Option 1')">Option 1</button>
+  <button class="menu-button" (click)="onButtonClick('Option 2')">Option 2</button>
+  <button class="menu-button" (click)="onButtonClick('Option 3')">Option 3</button>
+</div>
