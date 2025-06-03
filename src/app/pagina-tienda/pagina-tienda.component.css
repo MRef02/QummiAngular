@@ -1,4 +1,5 @@
-  .background-container {
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap');
+.background-container {
     background-size: 100%;
     background-position: center;
     background-repeat: no-repeat;
@@ -28,7 +29,6 @@
     }
 
     .back-button {
-    left: 20px;
     color: #8ed0e3;
     background-color: #e6f6fb;
     border: 5px solid #97cbda;
@@ -37,10 +37,11 @@
     height: 65px;
     font-size: 30px;
     cursor: pointer;
+    padding-bottom: 5px;
     transition: background-color 0.3s, transform 0.5s ease;
     }
 
-  .back-button:hover {
+    .back-button:hover {
     background-color: #78b9c9;
     color: white;
     transform: rotate(360deg);
@@ -54,6 +55,7 @@
     padding: 10px 25px;
     border-radius: 25px;
     font-size: 30px;
+    font-family: 'Fredoka',sans-serif;
     font-weight: bold;
     cursor: pointer;
     transition: all 0.3s ease;
@@ -76,6 +78,7 @@
     align-items: center;
     gap: 10px;
     font-size: 18px;
+    font-family: 'Fredoka',sans-serif;
     font-weight: bold;
     color: #1e3f5a;
     }
@@ -106,6 +109,7 @@
 
     .descripcion {
     font-size: 30px;
+    font-family: 'Fredoka',sans-serif;
     font-weight: bold;
     flex-grow: 1;
     margin-left: 20px;
@@ -117,6 +121,7 @@
     padding: 15px 30px;
     margin-right: 170px;
     font-size: 25px;
+    font-family: 'Fredoka',sans-serif;
     color: #316a96;
     border-radius: 40px;
     cursor: pointer;
@@ -197,8 +202,8 @@
     }
 
     .titulo-adicional {
-    font-family: 'Comic Sans MS', cursive;
     font-size: 25px;
+    font-family: 'Fredoka',sans-serif;
     font-weight: bold;
     margin: 5px 0;
     }
@@ -208,6 +213,7 @@
     align-items: center;
     gap: 8px;
     font-size: 20px;
+    font-family: 'Fredoka',sans-serif;
     color: #ff9100;
     font-weight: bold;
     }

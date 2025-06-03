@@ -1,6 +1,6 @@
 .background-container {
     background-image: url('/img/page-background.png');
-    background-size: 107%;
+    background-size: 100%;
     background-position: center;
     background-repeat: no-repeat;
 
@@ -15,8 +15,8 @@
     display: flex;
     justify-content: right;
     align-items: center;
-    height: 25vh;
-    width: 130vh;
+    height: 32vh;
+    width: 131vh;
 }
 
 .Container > *{
