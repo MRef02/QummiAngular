@@ -1,20 +1,22 @@
+<!-- cuadrito.component.html -->
 <p-card [style]="style">
-    <div class = "Container">
+    <div class="Container">
         <button style="padding-top: 0; background-image: url(/img/coin.png); height: 10vh; background-size: cover; background-color: rgba(0, 0, 0, 0);" (click)="changePage('Tienda')"></button>
         <div style="position: relative;">
             <app-boton-hamburguesa (buttonClicked)="onHamburgerButtonClick($event)"></app-boton-hamburguesa>
         </div>
     </div>
-    <div class = "Container-Flechas">
-        <button style="background-image: url(/img/arrow.png); height: 10vh; background-size: cover; background-color: rgba(0, 0, 0, 0);" (click)="changeBackground('prev')" ></button>
+    <div class="Container-Flechas">
+        <button style="background-image: url(/img/arrow.png); height: 10vh; background-size: cover; background-color: rgba(0, 0, 0, 0);" (click)="changeBackground('prev')"></button>
         <button style="background-image: url(/img/arrow.png); height: 10vh; background-size: cover; background-color: rgba(0, 0, 0, 0);transform: scaleX(-1);" (click)="changeBackground('next')"></button>
     </div>
-    <div class  = "Container-Rueda">
-        <button style="background-image: url(/img/BotonAmor.png);height: 10vh;width: 10vh; background-size: cover; background-color: rgba(0, 0, 0, 0);"></button>
+    <div class="Container-Rueda">
+        <button style="background-image: url(/img/BotonAmor.png);height: 10vh;width: 10vh; background-size: cover; background-color: rgba(0, 0, 0, 0);" (click)="onLoveButtonClick()"></button>
         <button style="background-image: url(/img/BotonComida.png);height: 10vh;width: 10vh; background-size: cover; background-color: rgba(0, 0, 0, 0);" (click)="changePage('Cocina')"></button>
         <button style="background-image: url(/img/BotonJuegos.png);height: 10vh;width: 10vh; background-size: cover; background-color: rgba(0, 0, 0, 0);" (click)="changePage('Juegos')"></button>
-        <button style="background-image: url(/img/BotonChat.png);height: 10vh;width: 10vh; background-size: cover; background-color: rgba(0, 0, 0, 0);"></button>
+        <button style="background-image: url(/img/BotonChat.png);height: 10vh;width: 10vh; background-size: cover; background-color: rgba(0, 0, 0, 0);" (click)="changePage('Chat')"></button>
     </div>
+    <img [src]="gifUrl" [style]="getGifStyle()" alt="Animated pet">
 </p-card>
 
 <router-outlet></router-outlet>

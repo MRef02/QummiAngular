@@ -53,3 +53,7 @@
 .Container-Rueda > *{
     border: 0;
 }
+img {
+  z-index: 10;
+  pointer-events: none;
+}

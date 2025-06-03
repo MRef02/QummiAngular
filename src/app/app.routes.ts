@@ -6,6 +6,7 @@ import { PaginaTiendaComponent } from './pagina-tienda/pagina-tienda.component';
 import { PaginaUsuarioComponent } from './pagina-usuario/pagina-usuario.component';
 import { PaginaMascotasComponent } from './pagina-mascotas/pagina-mascotas.component';
 import { PaginaSoporteComponent } from './pagina-soporte/pagina-soporte.component';
+import { ChatComponent } from './pagina-chat/pagina-chat.component';
 
 export const routes: Routes = [
     {path: '',  component: PaginaPrincipalComponent, },
@@ -14,5 +15,6 @@ export const routes: Routes = [
     {path: 'tienda', component: PaginaTiendaComponent},
     {path:'usuario',component:PaginaUsuarioComponent},
     {path:'mascotas',component:PaginaMascotasComponent},
-    {path:'soporte',component:PaginaSoporteComponent}
+    {path:'soporte',component:PaginaSoporteComponent},
+    {path:'chat',component:ChatComponent}
 ];
