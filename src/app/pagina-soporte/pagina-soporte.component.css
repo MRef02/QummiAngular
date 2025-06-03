@@ -1,19 +1,14 @@
 .background-container {
     background-image: url('/img/page-background.png');
-    background-size: cover;
+    background-size: 107%;
     background-position: center;
     background-repeat: no-repeat;
-    width: 100vw;
-    min-height: 100vh;
+
+    width: 100%;
+    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 50px 15px;
-    box-sizing: border-box;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: -1;
 }
 
 .Container {
@@ -250,15 +245,15 @@ textarea {
     .background-container {
         padding: 30px 10px;
     }
-    
+
     body {
         padding: 30px 10px;
     }
-    
+
     .Container {
         padding: 5px;
     }
-    
+
     .container, .profile-container {
         width: 90%;
         padding: 20px;
@@ -266,27 +261,27 @@ textarea {
         max-width: none;
         min-height: 400px;
     }
-    
+
     p-card {
         max-width: 90%;
     }
-    
+
     .profile-content {
         flex-direction: column;
         text-align: center;
         gap: 20px;
     }
-    
+
     .profile-avatar {
         width: 100px;
         height: 100px;
     }
-    
+
     .support-title {
         font-size: 22px;
         padding: 8px 16px;
     }
-    
+
     .back-button {
         width: 45px;
         height: 45px;
@@ -300,27 +295,27 @@ textarea {
     .background-container {
         padding: 20px 5px;
     }
-    
+
     body {
         padding: 20px 5px;
     }
-    
+
     .container, .profile-container {
         width: 95%;
         padding: 15px;
         margin: 5px auto;
         min-height: 350px;
     }
-    
+
     p-card {
         max-width: 95%;
     }
-    
+
     .support-title {
         font-size: 18px;
         padding: 6px 12px;
     }
-    
+
     .Container > * {
         padding-right: 1vh;
     }
