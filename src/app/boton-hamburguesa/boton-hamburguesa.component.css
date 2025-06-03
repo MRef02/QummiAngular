@@ -1,21 +1,30 @@
 /* boton-hamburguesa.component.css */
 .hamburger-button {
-    background: none;
-    border: none;
+    background: linear-gradient(145deg, #e0f2fc, #e0f2fc);
+    border: 6px solid #95c8d7;
+    border-radius: 50%;
     cursor: pointer;
-    padding: 10px;
+    
+    height: 60px;
+    width: 60px;
+    
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    height: 24px;
-    width: 30px;
-    background-color: transparent;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    
+    padding: 0;
 }
 
 .hamburger-line {
-    width: 100%;
-    height: 3px;
-    background-color: white;
+    width: 65%; 
+    height: 6px;
+    background-color: #95c8d7; 
+    border-radius: 6px;
     transition: all 0.3s ease;
 }
 
@@ -23,13 +32,15 @@
     background-color: #78BFEF;
 }
 
+.hamburger-button:hover .hamburger-line {
+    background-color: #78BFEF;
+    width: 70%; 
+}
+
 .menu-container {
     position: absolute;
-    top: 100%;
-    right: 0;
-    background-color: rgba(0, 0, 0, 0);
-    border-radius: 5px;
-    padding: 10px;
+    top: 66px;
+    left: 31%;
     display: flex;
     flex-direction: column;
     gap: 8px;
@@ -51,4 +62,154 @@
     background-color: #78BFEF;
     color: black;
     transform: scale(1.05);
+}
+
+.menu-icon {
+    width: 62px;
+    height: 62px;
+    flex-shrink: 0; /* No se comprime */
+    transition: filter 0.3s ease;
+}
+
+.skin-button {
+  width: 50px;
+  height: 50px;
+  background-image: url('/img/gancho-de-ropa.png'),linear-gradient(145deg, #e0f2fc, #e0f2fc);
+  background-repeat: no-repeat;
+  background-position: center, center;
+  background-size: 50%, cover;
+  border: 4px solid #95c8d7;
+  border-radius: 50%;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.skin-button::before {
+  content: '';
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  position: absolute;
+  top: 8px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.skin-button::after {
+  content: url('/img/gancho-de-ropa-png');
+  width: 25px;
+  height: 10px;
+  border-radius: 0 0 15px 15px;
+  position: absolute;
+  bottom: 8px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.user-button {
+  width: 50px;
+  height: 50px;
+  background: linear-gradient(145deg, #e0f2fc, #e0f2fc);
+  border: 4px solid #95c8d7;
+  border-radius: 50%;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.user-button::before {
+  content: '';
+  width: 14px;
+  height: 14px;
+  background: #95c8d7;
+  border-radius: 50%;
+  position: absolute;
+  top: 7px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.user-button::after {
+  content: '';
+  width: 25px;
+  height: 15px;
+  background: #95c8d7;
+  border-radius: 20px 20px 0 0;
+  position: absolute;
+  bottom: 5px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* Botón de Soporte */
+.support-button {
+  width: 50px;
+  height: 50px;
+  background: linear-gradient(145deg, #e0f2fc, #e0f2fc);
+  border: 4px solid #95c8d7;
+  border-radius: 50%;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.support-button::before {
+  content: '?';
+  font-size: 24px;
+  font-weight: bold;
+  color: #95c8d7;
+  position: absolute;
+}
+
+/* Efectos hover */
+.skin-button:hover,
+.user-button:hover,
+.support-button:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.skin-button:hover {
+  background-image: url('/img/iconoSoporte.png'), linear-gradient(145deg, #e0f2fc, #e0f2fc);
+  background-repeat: no-repeat;
+  background-position: center, center;
+  background-size: 50%, cover;
+  border-color: #95c8d7;
+  transform: scale(1.1);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.user-button:hover {
+  background: linear-gradient(145deg, #e0f2fc, #e0f2fc);
+  border-color: #95c8d7;
+}
+
+.support-button:hover {
+  background: linear-gradient(145deg, #e0f2fc, #e0f2fc);
+  border-color: #95c8d7;
+}
+
+.support-icon {
+  width: 24px;
+  height: 24px;
+  pointer-events: none; /* Para que el clic sea del botón, no de la imagen */
+}
+
+.skin-icon{
+  width: 24px;
+  height: 24px;
+  pointer-events: none; /* Para que el clic sea del botón, no de la imagen */
 }

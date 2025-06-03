@@ -6,7 +6,9 @@
 </button>
 
 <div class="menu-container" *ngIf="isMenuOpen">
-  <button class="menu-button" (click)="onButtonClick('Option 1')">Option 1</button>
-  <button class="menu-button" (click)="onButtonClick('Option 2')">Option 2</button>
-  <button class="menu-button" (click)="onButtonClick('Option 3')">Option 3</button>
+  <button class="menu-button skin-button" (click)="changePage('Mascotas')">
+    <img src="/img/gancho-de-ropa.png" alt="Mascotas" class="skin-icon" />
+  </button>
+  <button class="menu-button user-button" (click)="changePage('Usuario')"></button>
+  <button class="menu-button support-button" (click)="changePage('Soporte')"></button>
 </div>

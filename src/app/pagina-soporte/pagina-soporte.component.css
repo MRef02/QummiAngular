@@ -1,0 +1,355 @@
+.background-container {
+    background-image: url('/img/page-background.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 15px;
+    box-sizing: border-box;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.Container {
+    display: flex;
+    justify-content: center; /* Cambiado de 'right' a 'center' */
+    align-items: center;
+    width: 100%;
+    max-width: 1200px; /* Límite máximo más razonable */
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.Container > * {
+    padding-left: 0vh;
+    padding-right: 5vh;
+    border: 0;
+}
+
+.Container button:hover {
+    transition: transform 0.3s ease, filter 0.3s ease;
+    transform: scale(1, 1);
+    filter: drop-shadow(0 0 10px #78BFEF);
+}
+
+body {
+    margin: 0;
+    padding: 50px 15px;
+    font-family: 'Arial Rounded MT Bold', sans-serif;
+    background-color: transparent;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    background-color: #e6f6fb;
+    max-width: 650px;
+    width: 80%;
+    margin: 0 auto;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    padding: 25px;
+    border: 6px solid #97cbda;
+    position: relative;
+    box-sizing: border-box;
+    min-height: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+/* Contenedor para perfil de usuario */
+.profile-container {
+    background-color: #e6f6fb;
+    max-width: 600px;
+    width: 85%;
+    margin: 0 auto;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    padding: 40px; /* Reducido para mejor ajuste */
+    border: 6px solid #97cbda;
+    position: relative;
+    box-sizing: border-box;
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile-content {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    width: 100%;
+}
+
+.profile-avatar {
+    width: 120px;
+    height: 120px;
+    background-color: #78BFEF;
+    border: 4px solid #97cbda;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.profile-info {
+    flex: 1;
+    color: #21618c;
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+.profile-info strong {
+    font-weight: bold;
+}
+
+.support-title {
+    display: inline-block;
+    background-color: white;
+    color: #21618c;
+    padding: 12px 24px;
+    border: 4px solid #aed6f1;
+    border-radius: 30px;
+    font-size: 28px;
+    font-family: 'Arial Rounded MT Bold', sans-serif;
+    text-align: center;
+    margin: 0 auto 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+}
+
+.title-wrapper {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.faq {
+    margin-bottom: 30px;
+    flex: 1;
+}
+
+.faq-item {
+    margin-bottom: 25px;
+}
+
+.faq-item strong {
+    font-size: 18px;
+    color: #308aa5;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.faq-item p {
+    margin: 0;
+    font-size: 15px;
+    line-height: 1.4;
+    color: #2c3e50;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: auto;
+}
+
+input, textarea {
+    padding: 12px;
+    font-size: 14px;
+    border: 2px solid #97cbda;
+    border-radius: 12px;
+    resize: none;
+    box-sizing: border-box;
+    width: 100%;
+    outline: none;
+    font-family: inherit;
+}
+
+input:focus, textarea:focus {
+    border-color: #4ECDC4;
+    box-shadow: 0 0 8px rgba(78, 205, 196, 0.3);
+}
+
+textarea {
+    height: 100px;
+}
+
+.send-button {
+    background-color: #e6f6fb;
+    border: 4px solid #97cbda;
+    border-radius: 25px;
+    font-size: 18px;
+    padding: 12px 30px;
+    color: #00334e;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 140px;
+    align-self: center;
+    box-sizing: border-box;
+    outline: none;
+    font-family: inherit;
+    font-weight: bold;
+}
+
+.send-button:hover {
+    background-color: #78b9c9;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.send-button:focus {
+    box-shadow: 0 0 8px rgba(120, 185, 201, 0.5);
+}
+
+.back-button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: #8ed0e3;
+    background-color: #e6f6fb;
+    border: 4px solid #97cbda;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 24px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    outline: none;
+}
+
+.back-button:hover {
+    background-color: #78b9c9;
+    color: white;
+    transform: rotate(360deg) scale(1.1);
+}
+
+.back-button:focus {
+    box-shadow: 0 0 8px rgba(120, 185, 201, 0.5);
+}
+
+/* Responsive design mejorado */
+@media (max-width: 768px) {
+    .background-container {
+        padding: 30px 10px;
+    }
+    
+    body {
+        padding: 30px 10px;
+    }
+    
+    .Container {
+        padding: 5px;
+    }
+    
+    .container, .profile-container {
+        width: 90%;
+        padding: 20px;
+        margin: 10px auto;
+        max-width: none;
+        min-height: 400px;
+    }
+    
+    p-card {
+        max-width: 90%;
+    }
+    
+    .profile-content {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+    
+    .profile-avatar {
+        width: 100px;
+        height: 100px;
+    }
+    
+    .support-title {
+        font-size: 22px;
+        padding: 8px 16px;
+    }
+    
+    .back-button {
+        width: 45px;
+        height: 45px;
+        font-size: 20px;
+        top: 15px;
+        right: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .background-container {
+        padding: 20px 5px;
+    }
+    
+    body {
+        padding: 20px 5px;
+    }
+    
+    .container, .profile-container {
+        width: 95%;
+        padding: 15px;
+        margin: 5px auto;
+        min-height: 350px;
+    }
+    
+    p-card {
+        max-width: 95%;
+    }
+    
+    .support-title {
+        font-size: 18px;
+        padding: 6px 12px;
+    }
+    
+    .Container > * {
+        padding-right: 1vh;
+    }
+}
+
+/* Reset global para mejor control */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos específicos para PrimeNG p-card */
+p-card {
+    display: block;
+    width: 100%;
+    max-width: 650px;
+    margin: 0 auto;
+}
+
+p-card .p-card {
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+/* Restaurar márgenes necesarios para elementos específicos */
+.faq-item, .faq, form, input, textarea, .send-button, .support-title, .title-wrapper {
+    margin: revert;
+    padding: revert;
+}

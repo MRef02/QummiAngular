@@ -1,0 +1,26 @@
+<div class="background-container"></div>
+<p-card [style]="style">
+    <div class="container">
+    <button class="back-button" onclick="history.back()">⟲</button>
+
+    <div class="title-wrapper">
+      <h1 class="support-title">🛠 Soporte Técnico</h1>
+    </div>
+
+    <div class="faq">
+      <div class="faq-item"><strong>¿Cómo cambio mi mascota?</strong><br>Puedes hacerlo desde el menú de hamburguesa seleccionando el icono del gancho.</div>
+      <div class="faq-item"><strong>¿Cómo edito mis datos?</strong><br>Ve a la sección "Cuenta" desde el menú y haz clic en "Editar".</div>
+      <div class="faq-item"><strong>¿Qummi no responde?</strong><br>Cierra la app y vuelve a abrirla. Si persiste, repórtalo abajo.</div>
+      <div class="faq-item"><strong>¿Perdí mi progreso?</strong><br>Verifica tu conexión. Si no se recupera, contáctanos usando el formulario.</div>
+    </div>
+
+    <form>
+      <input type="text" placeholder="Tu nombre">
+      <input type="email" placeholder="Tu correo electrónico">
+      <textarea placeholder="Describe tu problema o duda..."></textarea>
+      <button type="submit" class="send-button">Enviar</button>
+    </form>
+  </div>
+</p-card>
+
+<router-outlet></router-outlet>

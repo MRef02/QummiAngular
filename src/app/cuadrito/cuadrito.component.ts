@@ -1,9 +1,8 @@
-import { Component } from '@angular/core';
+// cuadrito.component.ts
+import { Component, OnInit } from '@angular/core';
 import { CardModule } from 'primeng/card';
-import { BotonComponent } from "../boton/boton.component";
-import { FlechasComponent } from "../flechas/flechas.component";
 import { BotonHamburguesaComponent } from "../boton-hamburguesa/boton-hamburguesa.component";
-import { Router, ActivatedRoute } from '@angular/router';
+import { Router } from '@angular/router';
 import { RouterOutlet } from '@angular/router';
 
 @Component({
@@ -18,46 +17,42 @@ export class CuadritoComponent {
     overflow: 'hidden',
     height: '85vh',
     'background-image': 'url(/img/living.png)',
-    'background-size' : '100%'
+    'background-size': '100%',
+    position: 'relative'
   };
 
-  backgrounds = ['living', 'kitchen', 'bathroom', 'patio']
+  backgrounds = ['living', 'kitchen', 'bathroom', 'patio'];
+  index = 0;
 
-  index = 0
-
-  router = new Router();
-
-  changeBackground(action: String) {
-    if(action == "next"){
-      this.index += 1
-    }
-    else if(action == "prev"){
-      this.index -= 1
+  router=new Router();
+  changeBackground(action: string) {
+    if (action == "next") {
+      this.index += 1;
+    } else if (action == "prev") {
+      this.index -= 1;
     }
 
-    if(this.index < 0){
+    if (this.index < 0) {
       this.index = this.backgrounds.length - 1;
     }
 
     this.style = {
       ...this.style,
-      'background-image': `url(/img/${this.backgrounds[this.index%this.backgrounds.length]}.png)`
+      'background-image': `url(/img/${this.backgrounds[this.index % this.backgrounds.length]}.png)`
     };
   }
 
-  changePage(page: String) {
-    if(page == "Cocina"){
+  changePage(page: string) {
+    if (page == "Cocina") {
       this.router.navigate(['/cocina']);
-    }
-    else if(page == "Juegos"){
+    } else if (page == "Juegos") {
       this.router.navigate(['/juegos']);
-    }
-    else if(page == "Tienda"){
+    } else if (page == "Tienda") {
       this.router.navigate(['/tienda']);
     }
   }
 
   onHamburgerButtonClick(option: string) {
-  console.log('Menu option clicked:', option);
-}
+    console.log('Menu option clicked:', option);
+  }
 }
