@@ -16,6 +16,5 @@ export const routes: Routes = [
     {path:'usuario',component:PaginaUsuarioComponent},
     {path:'mascotas',component:PaginaMascotasComponent},
     {path:'soporte',component:PaginaSoporteComponent},
-    {path: '**', redirectTo: '' },
     {path:'chat',component:ChatComponent}
 ];
